@@ -172,8 +172,8 @@
                 selectable: true,
                 selectHelper: true,
                 select: function(start, end) {
-                    $('#create_modal input[name=start_date]').val(moment(start).format('YYYY-MM-DD'));
-                    $('#create_modal input[name=end_date]').val(moment(end).format('YYYY-MM-DD'));
+                    $('#create_modal input[name=start_date]').val(moment(start).format('YYYY-MM-DD HH:mm:ss'));
+                    $('#create_modal input[name=end_date]').val(moment(end).format('YYYY-MM-DD HH:mm:ss'));
                     $('#create_modal').modal('show');
                     save();
                     $('#calendarIO').fullCalendar('unselect');
@@ -337,8 +337,8 @@
         function deteil(event)
         {
             $('#create_modal input[name=calendar_id]').val(event.id);
-            $('#create_modal input[name=start_date]').val(moment(event.start).format('YYYY-MM-DD'));
-            $('#create_modal input[name=end_date]').val(moment(event.end).format('YYYY-MM-DD'));
+            $('#create_modal input[name=start_date]').val(moment(event.start).format('YYYY-MM-DD HH:mm:ss'));
+            $('#create_modal input[name=end_date]').val(moment(event.end).format('YYYY-MM-DD HH:mm:ss'));
             $('#create_modal input[name=title]').val(event.title);
             $('#create_modal input[name=description]').val(event.description);
             $('#create_modal select[name=color]').val(event.color);
