@@ -13,7 +13,8 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/horizontal/css/style.css'; ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'; ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/fullcalendar/dist/fullcalendar.css'; ?>">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css'; ?>">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+        <!--<link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css'; ?>">-->
     </head>
     <body>
     
@@ -146,8 +147,9 @@
     <script type="text/javascript" src="<?php echo base_url().'assets/js/jquery.min.js'; ?>"></script>      
     <script type="text/javascript" src="<?php echo base_url().'assets/js/moment.min.js'; ?>"></script>      
     <script type="text/javascript" src="<?php echo base_url().'assets/js/bootstrap.min.js'; ?>"></script>      
-    <script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js'; ?>"></script>      
-    <script type="text/javascript" src="<?php echo base_url().'assets/plugins/fullcalendar/dist/fullcalendar.js'; ?>"></script>
+    <!--<script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js'; ?>"></script>-->      
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"</script>
+	<script type="text/javascript" src="<?php echo base_url().'assets/plugins/fullcalendar/dist/fullcalendar.js'; ?>"></script>
 	<script src="<?php echo base_url('/assets/plugins/fullcalendar/dist/locale/id.js')?>"></script>	
     <script type="text/javascript">
         var get_data        = '<?php echo $get_data; ?>';
