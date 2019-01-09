@@ -105,25 +105,18 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="form-group">
-                                                        <label class="control-label col-sm-2">Start Date</label>
-                                                        <div class="col-sm-10">
-                                                            <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-viewmode="years">
-                                                                <input type="text" name="start_date" class="form-control" readonly>
-                                                                <span class="input-group-addon"><i class="fa fa-calendar font-dark"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
 
-                                                    <div class="form-group">
-                                                        <label class="control-label col-sm-2">End Date</label>
-                                                        <div class="col-sm-10">
-                                                            <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-viewmode="years">
-                                                                <input type="text" name="end_date" class="form-control" readonly>
-                                                                <span class="input-group-addon"><i class="fa fa-calendar font-dark"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+													 <div class="form-group">
+														<label class="control-label col-sm-2">Start Date</label>
+														<div class="col-sm-10">
+															<div class='input-group date' id='datetimepicker1'>
+																<input type='text' class="form-control" />
+																<span class="input-group-addon">
+																	<span class="glyphicon glyphicon-calendar"></span>
+																</span>
+															</div>
+														</div>
+													</div>
 
                                                 </div>
                                                 <div class="modal-footer">
@@ -156,7 +149,9 @@
         var backend_url     = '<?php echo base_url(); ?>';
 
         $(document).ready(function() {
-            $('.date-picker').datetimepicker();
+			$(".datetimepicker1").datetimepicker({
+				format: "yyyy MM dd  hh:ii:ss"
+			});
             $('#calendarIO').fullCalendar({
                 header: {
                     left: 'prev,next today',
