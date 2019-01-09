@@ -159,7 +159,7 @@
                 header: {
                     left: 'prev,next today',
                     center: 'title',
-                    right: 'month,basicWeek,basicDay'
+                    right: 'month, agendaWeek, agendaDay'
                 },
                 defaultDate: moment().format('YYYY-MM-DD'),
                 editable: true,
