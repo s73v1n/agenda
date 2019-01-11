@@ -164,8 +164,8 @@
                 defaultDate: moment().format('YYYY-MM-DD'),
                 
 				slotDuration: '00:30:00',  
-				minTime: '08:00:00',
-				maxTime: '19:00:00',
+				minTime: '06:00:00',
+				maxTime: '22:00:00',
 				handleWindowResize: true,
 				editable: true,
                 eventLimit: true, // allow "more" link when too many events
