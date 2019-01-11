@@ -172,8 +172,8 @@
                 selectable: true,
                 selectHelper: true,
                 select: function(start, end) {
-                    $('#create_modal input[name=start_date]').val(moment(start).format('YYYY-MM-DD'));
-                    $('#create_modal input[name=end_date]').val(moment(end).format('YYYY-MM-DD'));
+                    $('#create_modal input[name=start_date]').val(moment(start).format('YYYY-MM-DD HH:mm:ss'));
+                    $('#create_modal input[name=end_date]').val(moment(end).format('YYYY-MM-DD HH:mm:ss'));
                     $('#create_modal').modal('show');
                     save();
                     $('#calendarIO').fullCalendar('unselect');
