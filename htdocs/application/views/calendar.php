@@ -9,7 +9,7 @@
         <title>Pemerintah Kota Jambi</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css/bootstrap.min.css'; ?>">
+		<link href="<?php echo base_url('/assets/plugins/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/horizontal/css/style.css'; ?>">
 		<link href="<?php echo base_url('/assets/horizontal/css/colors/blue.css')?>" id="theme" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'; ?>">
@@ -140,9 +140,10 @@ $this->load->view('template/menu');
     </div>
     <!--<script type="text/javascript" src="<?php echo base_url().'assets/js/jquery.min.js'; ?>"></script>-->
 	<script src="<?php echo base_url('/assets/plugins/jquery/jquery.min.js')?>"></script>
-	<script src="<?php echo base_url('/assets/plugins/popper/popper.min.js')?>"></script>	
-    <script type="text/javascript" src="<?php echo base_url().'assets/js/moment.min.js'; ?>"></script>      
+	<script src="<?php echo base_url('/assets/plugins/popper/popper.min.js')?>"></script>
+    <script src="<?php echo base_url('/assets/horizontal/js/jquery.slimscroll.js')?>"></script>	 
 	<script src="<?php echo base_url('/assets/plugins/bootstrap/js/bootstrap.min.js')?>"></script>
+	<script type="text/javascript" src="<?php echo base_url().'assets/js/moment.min.js'; ?>"></script> 
 	<script src="<?php echo base_url('/assets/horizontal/js/sidebarmenu.js')?>"></script>
     <script src="<?php echo base_url('/assets/horizontal/js/custom.min.js')?>"></script>	
     <script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js'; ?>"></script>      
