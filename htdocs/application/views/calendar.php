@@ -15,23 +15,17 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'; ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/fullcalendar/dist/fullcalendar.css'; ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css'; ?>">
-    </head>
-    <body>
-    
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-         
-          <center>
-              <a href="https://fullcalendar.io/">
-                <img id="logo" src="https://fullcalendar.io/images/logo.svg" width="58" height="48">
-              </a>
-              +
-              <a href="https://fullcalendar.io/">
-                <img id="logo" src="https://www.codeigniter.com/assets/images/ci-logo-white.png" width="58" height="48">
-              </a>
-          </center>
-      </div>
-    </nav>        
+<?php
+$this->load->view('template/header');
+?>
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+<?php
+$this->load->view('template/menu');
+?>  
+   
+       
 
     <div class="container">
         <div class="page-content-wrapper">
