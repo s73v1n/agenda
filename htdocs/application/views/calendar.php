@@ -14,7 +14,7 @@
 		<link href="<?php echo base_url('/assets/horizontal/css/colors/blue.css')?>" id="theme" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'; ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/fullcalendar/dist/fullcalendar.css'; ?>">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css'; ?>">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
 <?php
 $this->load->view('template/header');
 ?>
@@ -101,20 +101,24 @@ $this->load->view('template/menu');
                                                     <div class="form-group">
                                                         <label class="control-label col-sm-2">Start Date</label>
                                                         <div class="col-sm-10">
-                                                            <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-viewmode="years">
-                                                                <input type="text" name="start_date" class="form-control" readonly>
-                                                                <span class="input-group-addon"><i class="fa fa-calendar font-dark"></i></span>
-                                                            </div>
+															<div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+																<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+																<div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+																	<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+																</div>
+															</div>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <label class="control-label col-sm-2">End Date</label>
                                                         <div class="col-sm-10">
-                                                            <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-viewmode="years">
-                                                                <input type="text" name="end_date" class="form-control" readonly>
-                                                                <span class="input-group-addon"><i class="fa fa-calendar font-dark"></i></span>
-                                                            </div>
+															<div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+																<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+																<div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+																	<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+																</div>
+															</div>
                                                         </div>
                                                     </div>
 
@@ -149,7 +153,7 @@ $this->load->view('template/menu');
     <script src="<?php echo base_url('/assets/plugins/sparkline/jquery.sparkline.min.js')?>"></script>	
 	<script src="<?php echo base_url('/assets/horizontal/js/sidebarmenu.js')?>"></script>
     <script src="<?php echo base_url('/assets/horizontal/js/custom.min.js')?>"></script>	
-    <script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js'; ?>"></script>      
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>      
     <script type="text/javascript" src="<?php echo base_url().'assets/plugins/fullcalendar/dist/fullcalendar.js'; ?>"></script>
 	<script src="<?php echo base_url('/assets/plugins/fullcalendar/dist/locale/id.js')?>"></script>	
     <script type="text/javascript">
@@ -157,7 +161,9 @@ $this->load->view('template/menu');
         var backend_url     = '<?php echo base_url(); ?>';
 
         $(document).ready(function() {
-            $('.date-picker').datepicker();
+              $('#datetimepicker2').datetimepicker({
+                    locale: 'id'
+                });
             $('#calendarIO').fullCalendar({
                 header: {
                     left: 'prev,next today',
@@ -340,8 +346,8 @@ $this->load->view('template/menu');
         function deteil(event)
         {
             $('#create_modal input[name=calendar_id]').val(event.id);
-            $('#create_modal input[name=start_date]').val(moment(event.start).format('YYYY-MM-DD'));
-            $('#create_modal input[name=end_date]').val(moment(event.end).format('YYYY-MM-DD'));
+            $('#create_modal input[name=start_date]').val(moment(event.start).format('YYYY-MM-DD HH:mm:ss'));
+            $('#create_modal input[name=end_date]').val(moment(event.end).format('YYYY-MM-DD HH:mm:ss'));
             $('#create_modal input[name=title]').val(event.title);
             $('#create_modal input[name=description]').val(event.description);
             $('#create_modal select[name=color]').val(event.color);
