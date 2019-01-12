@@ -142,7 +142,7 @@ $this->load->view('template/menu');
 	<script src="<?php echo base_url('/assets/plugins/jquery/jquery.min.js')?>"></script>
 	<script src="<?php echo base_url('/assets/plugins/popper/popper.min.js')?>"></script>	
     <script type="text/javascript" src="<?php echo base_url().'assets/js/moment.min.js'; ?>"></script>      
-    <script type="text/javascript" src="<?php echo base_url().'assets/js/bootstrap.min.js'; ?>"></script>
+	<script src="<?php echo base_url('/assets/plugins/bootstrap/js/bootstrap.min.js')?>"></script>
     <script src="<?php echo base_url('/assets/horizontal/js/custom.min.js')?>"></script>	
     <script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js'; ?>"></script>      
     <script type="text/javascript" src="<?php echo base_url().'assets/plugins/fullcalendar/dist/fullcalendar.js'; ?>"></script>
