@@ -25,8 +25,7 @@ $this->load->view('template/header');
 $this->load->view('template/menu');
 ?>  
    
-       
-
+<div class="page-wrapper">       
     <div class="container">
         <div class="page-content-wrapper">
             <div class="page-content">
@@ -138,6 +137,7 @@ $this->load->view('template/menu');
             </div>
         </div>
     </div>
+</div>
     <!--<script type="text/javascript" src="<?php echo base_url().'assets/js/jquery.min.js'; ?>"></script>-->
 	<script src="<?php echo base_url('/assets/plugins/jquery/jquery.min.js')?>"></script>
 	<script src="<?php echo base_url('/assets/plugins/popper/popper.min.js')?>"></script>
