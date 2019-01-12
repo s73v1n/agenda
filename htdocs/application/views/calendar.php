@@ -143,7 +143,10 @@ $this->load->view('template/menu');
 	<script src="<?php echo base_url('/assets/plugins/popper/popper.min.js')?>"></script>
     <script src="<?php echo base_url('/assets/horizontal/js/jquery.slimscroll.js')?>"></script>	 
 	<script src="<?php echo base_url('/assets/plugins/bootstrap/js/bootstrap.min.js')?>"></script>
-	<script type="text/javascript" src="<?php echo base_url().'assets/js/moment.min.js'; ?>"></script> 
+	<script type="text/javascript" src="<?php echo base_url().'assets/js/moment.min.js'; ?>"></script>
+    <!--stickey kit -->
+    <script src="<?php echo base_url('/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js')?>"></script>
+    <script src="<?php echo base_url('/assets/plugins/sparkline/jquery.sparkline.min.js')?>"></script>	
 	<script src="<?php echo base_url('/assets/horizontal/js/sidebarmenu.js')?>"></script>
     <script src="<?php echo base_url('/assets/horizontal/js/custom.min.js')?>"></script>	
     <script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js'; ?>"></script>      
