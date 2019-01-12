@@ -1,4 +1,3 @@
-<script type="text/javascript">
         var get_data        = '<?php echo $get_data; ?>';
         var backend_url     = '<?php echo base_url(); ?>';
 
@@ -278,5 +277,3 @@
                 });
             })
         }
-
-    </script>
