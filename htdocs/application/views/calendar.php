@@ -26,7 +26,7 @@ $this->load->view('template/menu');
 ?>  
    
 <div class="page-wrapper">       
-    <div class="container">
+    <div class="container-fluid">
         <div class="page-content-wrapper">
             <div class="page-content">
                 <div class="alert notification" style="display: none;">
