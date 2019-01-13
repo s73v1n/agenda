@@ -180,8 +180,8 @@ $this->load->view('template/menu');
                 selectable: true,
                 selectHelper: true,
                 select: function(start, end) {
-                    $('#create_modal input[name=start_date]').val(moment(start).format('YYYY-MM-DD HH:mm:ss'));
-                    $('#create_modal input[name=end_date]').val(moment(end).format('YYYY-MM-DD HH:mm:ss'));
+                    $('#create_modal input[name=start_date]').val(moment(start).format('YYYY-MM-DD HH:mm'));
+                    $('#create_modal input[name=end_date]').val(moment(end).format('YYYY-MM-DD HH:mm'));
                     $('#create_modal').modal('show');
                     save();
                     $('#calendarIO').fullCalendar('unselect');
@@ -228,8 +228,8 @@ $this->load->view('template/menu');
                             id          : data.id,
                             title       : $('#create_modal input[name=title]').val(),
                             description : $('#create_modal textarea[name=description]').val(),
-                            start       : moment($('#create_modal input[name=start_date]').val()).format('YYYY-MM-DD HH:mm:ss'),
-                            end         : moment($('#create_modal input[name=end_date]').val()).format('YYYY-MM-DD HH:mm:ss'),
+                            start       : moment($('#create_modal input[name=start_date]').val()).format('YYYY-MM-DD HH:mm'),
+                            end         : moment($('#create_modal input[name=end_date]').val()).format('YYYY-MM-DD HH:mm'),
                             color       : $('#create_modal select[name=color]').val()
                         };
                         $('#calendarIO').fullCalendar('renderEvent', eventData, true); // stick? = true
@@ -256,10 +256,10 @@ $this->load->view('template/menu');
 
         function editDropResize(event)
         {
-            start = event.start.format('YYYY-MM-DD HH:mm:ss');
+            start = event.start.format('YYYY-MM-DD HH:mm');
             if(event.end)
             {
-                end = event.end.format('YYYY-MM-DD HH:mm:ss');
+                end = event.end.format('YYYY-MM-DD HH:mm');
             }
             else
             {
@@ -315,8 +315,8 @@ $this->load->view('template/menu');
                                 id          : data.id,
                                 title       : $('#create_modal input[name=title]').val(),
                                 description : $('#create_modal textarea[name=description]').val(),
-                                start       : moment($('#create_modal input[name=start_date]').val()).format('YYYY-MM-DD HH:mm:ss'),
-                                end         : moment($('#create_modal input[name=end_date]').val()).format('YYYY-MM-DD HH:mm:ss'),
+                                start       : moment($('#create_modal input[name=start_date]').val()).format('YYYY-MM-DD HH:mm'),
+                                end         : moment($('#create_modal input[name=end_date]').val()).format('YYYY-MM-DD HH:mm'),
                                 color       : $('#create_modal select[name=color]').val()
                             };
                             $('#calendarIO').fullCalendar('renderEvent', eventData, true); // stick? = true
@@ -345,8 +345,8 @@ $this->load->view('template/menu');
         function deteil(event)
         {
             $('#create_modal input[name=calendar_id]').val(event.id);
-            $('#create_modal input[name=start_date]').val(moment(event.start).format('YYYY-MM-DD HH:mm:ss'));
-            $('#create_modal input[name=end_date]').val(moment(event.end).format('YYYY-MM-DD HH:mm:ss'));
+            $('#create_modal input[name=start_date]').val(moment(event.start).format('YYYY-MM-DD HH:mm'));
+            $('#create_modal input[name=end_date]').val(moment(event.end).format('YYYY-MM-DD HH:mm'));
             $('#create_modal input[name=title]').val(event.title);
             $('#create_modal input[name=description]').val(event.description);
             $('#create_modal select[name=color]').val(event.color);
@@ -374,8 +374,8 @@ $this->load->view('template/menu');
                         {   
                             event.title         = $('#create_modal input[name=title]').val();
                             event.description   = $('#create_modal textarea[name=description]').val();
-                            event.start         = moment($('#create_modal input[name=start_date]').val()).format('YYYY-MM-DD HH:mm:ss');
-                            event.end           = moment($('#create_modal input[name=end_date]').val()).format('YYYY-MM-DD HH:mm:ss');
+                            event.start         = moment($('#create_modal input[name=start_date]').val()).format('YYYY-MM-DD HH:mm');
+                            event.end           = moment($('#create_modal input[name=end_date]').val()).format('YYYY-MM-DD HH:mm');
                             event.color         = $('#create_modal select[name=color]').val();
                             $('#calendarIO').fullCalendar('updateEvent', event);
 
