@@ -159,7 +159,7 @@ $this->load->view('template/menu');
     <script src="<?php echo base_url('/assets/plugins/calendar/dist/jquery.fullcalendar.js')?>"</script>
 	<script src="<?php echo base_url('/assets/plugins/calendar/dist/locale/id.js')?>"></script>
     <script type="text/javascript">
-	$(function() {
+$(document).ready(function() {
 	var get_data        = '<?php echo $get_data;?>';
     var backend_url     = '<?php echo base_url();?>';
 	var base_url='http://13.76.224.94/protokol/index.php';
