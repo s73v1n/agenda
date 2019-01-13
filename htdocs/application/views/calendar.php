@@ -161,17 +161,14 @@ $this->load->view('template/menu');
         var backend_url     = '<?php echo base_url(); ?>';
 
         $(document).ready(function() {
-              $('#datetimepicker2').datetimepicker({
-                    locale: 'id'
-                });
+            $('#datetimepicker2').datetimepicker();
             $('#calendarIO').fullCalendar({
                 header: {
                     left: 'prev,next today',
                     center: 'title',
                     right: 'month, agendaWeek, agendaDay'
                 },
-                defaultDate: moment().format('YYYY-MM-DD'),
-                
+                defaultDate: moment().format('YYYY-MM-DD'),                
 				slotDuration: '00:30:00',  
 				minTime: '06:00:00',
 				maxTime: '22:00:00',
