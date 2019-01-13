@@ -169,10 +169,9 @@ $this->load->view('template/menu');
             center: 'title',
             right: 'month, agendaWeek, agendaDay'
         },
-		events: {
-			url: JSON.parse(get_data),
+		events: JSON.parse(get_data),
 			
-		},
+	
 		defaultView: 'month',
 		slotDuration: '00:30:00',  
         minTime: '08:00:00',
