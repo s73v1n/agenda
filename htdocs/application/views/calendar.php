@@ -114,7 +114,7 @@ $this->load->view('template/menu');
                                                         <label class="control-label col-sm-2">End Date</label>
                                                         <div class="col-sm-10">
 															<div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-																<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+																<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker"/>
 																<div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
 																	<div class="input-group-text"><i class="fa fa-calendar"></i></div>
 																</div>
