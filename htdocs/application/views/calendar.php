@@ -159,43 +159,8 @@ $this->load->view('template/menu');
     <script src="<?php echo base_url('/assets/plugins/calendar/dist/jquery.fullcalendar.js')?>"</script>
 	<script src="<?php echo base_url('/assets/plugins/calendar/dist/locale/id.js')?>"></script>
     <script type="text/javascript">
-$(document).ready(function() {
-	var get_data        = '<?php echo $get_data;?>';
-    var backend_url     = '<?php echo base_url();?>';
-	var base_url='http://13.76.224.94/protokol/index.php';
-	$('#calendar').fullCalendar({
-		header: {
-            left: 'prev, next, today',
-            center: 'title',
-            right: 'month, agendaWeek, agendaDay'
-        },
-		events: JSON.parse(get_data),
-			
+
 	
-		defaultView: 'month',
-		slotDuration: '00:30:00',  
-        minTime: '08:00:00',
-        maxTime: '19:00:00',
-		handleWindowResize: true,
-		editable: true,
-        droppable: true, // this allows things to be dropped onto the calendar !!!
-        eventLimit: true, // allow "more" link when too many events
-        selectable: true,
-		selectHelper: true,
-		select: function(start, end) {
-			$('#start').val(moment(start).format('YYYY-MM-DD HH:mm:ss'));
-            $('#end').val(moment(end).format('YYYY-MM-DD HH:mm:ss'));			
-			},
-		select: function(start, end) {
-
-                },
-		eventClick:  function(event, jsEvent, view) {
-
-        },
-  });
-
-});
-	/*
         var get_data        = '<?php echo $get_data; ?>';
         var backend_url     = '<?php echo base_url(); ?>';
 
@@ -473,7 +438,7 @@ $(document).ready(function() {
                     }         
                 });
             })
-        }*/
+        }
 
     </script>
 	<script src="<?php echo base_url('/assets/plugins/styleswitcher/jQuery.style.switcher.js')?>"></script>
