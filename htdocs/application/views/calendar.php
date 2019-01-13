@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/horizontal/css/style.css'; ?>">
 		<link href="<?php echo base_url('/assets/horizontal/css/colors/blue.css')?>" id="theme" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'; ?>">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/fullcalendar/dist/fullcalendar.css'; ?>">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/calendar/dist/fullcalendar.css'; ?>">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
 <?php
 $this->load->view('template/header');
