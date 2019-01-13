@@ -138,7 +138,7 @@ $this->load->view('template/menu');
         </div>
     </div>
 </div>
-    <!--<script type="text/javascript" src="<?php echo base_url().'assets/js/jquery.min.js'; ?>"></script>-->
+    <!---<script type="text/javascript" src="<?php echo base_url().'assets/js/jquery.min.js'; ?>"></script>-->
 	<script src="<?php echo base_url('/assets/plugins/jquery/jquery.min.js')?>"></script>
 	<script src="<?php echo base_url('/assets/plugins/popper/popper.min.js')?>"></script>
     <script src="<?php echo base_url('/assets/horizontal/js/jquery.slimscroll.js')?>"></script>	 
@@ -162,7 +162,7 @@ $this->load->view('template/menu');
                 header: {
                     left: 'prev,next today',
                     center: 'title',
-                    right: 'month, agendaWeek, agendaDay'
+                    right: 'listMonth, agendaWeek, agendaDay'
                 },
                 defaultDate: moment().format('YYYY-MM-DD'),
                 
@@ -427,7 +427,7 @@ $this->load->view('template/menu');
                     error: function (jqXHR, textStatus, errorThrown)
                     {
                         $('#form_create').find('.alert').css('display', 'block');
-                        $('#form_create').find('.alert').html('Wrong server, please save again');
+                        $('#form_create').find('.alert').html('Silahkan Coba Lagi');
                     }         
                 });
             })
