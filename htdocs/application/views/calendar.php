@@ -9,8 +9,8 @@
         <title>Pemerintah Kota Jambi</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-		<link href="<?php echo base_url('/assets/plugins/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/horizontal/css/style.css'; ?>">
+		<!--<link href="<?php echo base_url('/assets/plugins/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/horizontal/css/style.css'; ?>">-->
 		<link href="<?php echo base_url('/assets/horizontal/css/colors/blue.css')?>" id="theme" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'; ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/calendar/dist/fullcalendar.css'; ?>">
@@ -150,7 +150,7 @@ $this->load->view('template/menu');
     <script src="<?php echo base_url('/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js')?>"></script>
     <script src="<?php echo base_url('/assets/plugins/sparkline/jquery.sparkline.min.js')?>"></script>	
 	<script src="<?php echo base_url('/assets/horizontal/js/sidebarmenu.js')?>"></script>
-    <!--<script src="<?php echo base_url('/assets/horizontal/js/custom.min.js')?>"></script>-->	
+<script src="<?php echo base_url('/assets/horizontal/js/custom.min.js')?>"></script>	
 	<script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js'; ?>"></script> 
     <script type="text/javascript" src="<?php echo base_url().'assets/plugins/calendar/dist/fullcalendar.js'; ?>"></script>
 	<script src="<?php echo base_url('/assets/plugins/calendar/dist/locale/id.js')?>"></script>	
