@@ -101,20 +101,20 @@ $this->load->view('template/menu');
                                                     <div class="form-group">
                                                         <label class="control-label col-sm-2">Start Date</label>
                                                         <div class="col-sm-10">
-                                                            <div class="input-group date" id="date-picker" data-date-format="YYYY MM DD">
-                                                                <input type="text" name="start_date" class="form-control" readonly>
-                                                                <span class="input-group-addon"><i class="fa fa-calendar font-dark"></i></span>
-                                                            </div>
+																<div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+																	<input size="16" type="text" value="12-02-2012" readonly>
+																	<span class="add-on"><i class="icon-th"></i></span>
+																</div>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <label class="control-label col-sm-2">End Date</label>
                                                         <div class="col-sm-10">
-                                                            <div class="input-group date" id="date-picker" data-date-format="YYYY MM DD">
-                                                                <input type="text" name="end_date" class="form-control" readonly>
-                                                                <span class="input-group-addon"><i class="fa fa-calendar font-dark"></i></span>
-                                                            </div>
+																<div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+																	<input size="16" type="text" value="12-02-2012" readonly>
+																	<span class="add-on"><i class="icon-th"></i></span>
+																</div>
                                                         </div>
                                                     </div>
 
@@ -157,7 +157,7 @@ $this->load->view('template/menu');
         var backend_url     = '<?php echo base_url(); ?>';
 
         $(document).ready(function() {
-            $('.date-picker').datetimepicker();
+            $('.datetimepicker').datetimepicker();
             $('#calendarIO').fullCalendar({
                 header: {
                     left: 'prev,next today',
