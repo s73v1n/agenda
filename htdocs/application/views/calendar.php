@@ -187,7 +187,7 @@ $this->load->view('template/menu');
                     $('#create_modal').modal('show');
                     save();
                     $('#calendarIO').fullCalendar('unselect');
-                },/*
+                },
                 eventDrop: function(event, delta, revertFunc) { // si changement de position
                     editDropResize(event);
                 },
@@ -199,11 +199,11 @@ $this->load->view('template/menu');
                     deteil(event);
                     editData(event);
                     deleteData(event);
-                },*/
+                },
                 events: JSON.parse(get_data)
             });
         });
-/*
+
         $(document).on('click', '.add_calendar', function(){
             $('#create_modal input[name=calendar_id]').val(0);
             $('#create_modal').modal('show');  
@@ -439,7 +439,7 @@ $this->load->view('template/menu');
                 });
             })
         }
-*/
+
     </script>
 	<script src="<?php echo base_url('/assets/plugins/styleswitcher/jQuery.style.switcher.js')?>"></script>
     </body>
