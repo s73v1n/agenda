@@ -157,7 +157,7 @@ $this->load->view('template/menu');
         var backend_url     = '<?php echo base_url(); ?>';
 
         $(document).ready(function() {
-            $('.date-picker').datepicker();
+            $('.date-picker').datetimepicker();
             $('#calendarIO').fullCalendar({
                 header: {
                     left: 'prev,next today',
