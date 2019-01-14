@@ -87,14 +87,14 @@ $this->load->view('template/menu');
 													</div>
 													<div class="form-group">
                                                         <label class="control-label">Mulai</label>														
-															<div class="input-append date form_datetime">
+															<div class="input-append date form_datetime" data-date-format="yyyy-mm-dd" data-date-viewmode="years">
 																<input size="16" name="start_date" type="text" value="" readonly>
 																<span class="add-on"><i class="icon-th"></i></span>
 															</div>
                                                     </div>
 													<div class="form-group">
                                                         <label class="control-label">Mulai</label>														
-															<div class="input-append date form_datetime">
+															<div class="input-append date form_datetime" data-date-format="yyyy-mm-dd" data-date-viewmode="years">
 																<input size="16" name="end_date" type="text" value="" readonly>
 																<span class="add-on"><i class="icon-th"></i></span>
 															</div>
