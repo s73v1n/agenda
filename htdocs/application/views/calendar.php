@@ -89,14 +89,14 @@ $this->load->view('template/menu');
                                                         <label class="control-label">Mulai</label>														
 															<div class="input-append date form_datetime">
 																<input size="16" name="start_date" type="text" value="" readonly>
-																<span><i class="fa fa-calendar font-dark"></i></span>
+																<span class="add-on"><i class="icon-th"></i></span>
 															</div>
                                                     </div>
 													<div class="form-group">
                                                         <label class="control-label">Mulai</label>														
 															<div class="input-append date form_datetime">
 																<input size="16" name="end_date" type="text" value="" readonly>
-																<span><i class="fa fa-calendar font-dark"></i></span>
+																<span class="add-on"><i class="icon-th"></i></span>
 															</div>
                                                     </div>                                         
                                             </div>
@@ -144,8 +144,7 @@ $this->load->view('template/menu');
             $(".form_datetime").datetimepicker({
 					format: "dd mm yyyy hh:ii",
 					autoclose: true,
-					todayBtn: true,
-					pickerPosition: "top-left",					
+					todayBtn: true,					
 					minuteStep: 30
 					});
             $('#calendarIO').fullCalendar({
