@@ -145,7 +145,8 @@ $this->load->view('template/menu');
 					format: "dd mm yyyy hh:ii",
 					autoclose: true,
 					todayBtn: true,					
-					minuteStep: 30
+					minuteStep: 30,
+					pickerPosition: "top-left"
 					});
             $('#calendarIO').fullCalendar({
                 themeSystem: 'bootstrap4',
