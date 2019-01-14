@@ -144,7 +144,8 @@ $this->load->view('template/menu');
             $(".form_datetime").datetimepicker({
 					format: "dd mm yyyy hh:ii",
 					autoclose: true,
-					todayBtn: true,					
+					todayBtn: true,
+					pickerPosition: "top-left",					
 					minuteStep: 30
 					});
             $('#calendarIO').fullCalendar({
