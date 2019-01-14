@@ -150,7 +150,7 @@ $this->load->view('template/menu');
     <script src="<?php echo base_url('/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js')?>"></script>
     <script src="<?php echo base_url('/assets/plugins/sparkline/jquery.sparkline.min.js')?>"></script>	
 	<script src="<?php echo base_url('/assets/horizontal/js/sidebarmenu.js')?>"></script>
-    <script src="<?php echo base_url('/assets/horizontal/js/custom.min.js')?>"></script>	
+    <!--<script src="<?php echo base_url('/assets/horizontal/js/custom.min.js')?>"></script>-->	
 	<script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js'; ?>"></script> 
     <script type="text/javascript" src="<?php echo base_url().'assets/plugins/calendar/dist/fullcalendar.js'; ?>"></script>
 	<script src="<?php echo base_url('/assets/plugins/calendar/dist/locale/id.js')?>"></script>	
@@ -163,7 +163,7 @@ $this->load->view('template/menu');
 					format: "dd mm yyyy hh:ii",
 					autoclose: true,
 					todayBtn: true,					
-					minuteStep: 10
+					minuteStep: 30
 					});
             $('#calendarIO').fullCalendar({
                 header: {
@@ -171,7 +171,7 @@ $this->load->view('template/menu');
                     center: 'title',
                     right: 'listMonth, agendaWeek, agendaDay'
                 },
-                defaultDate: moment().format('YYYY MM DD'),
+                defaultDate: moment().format('YYYY-MM-DD '),
                 
 				slotDuration: '00:30:00',  
 				minTime: '06:00:00',
@@ -397,7 +397,7 @@ $this->load->view('template/menu');
                     {
                         element.find('button[type=submit]').html('Submit');
                         element.find('.alert').css('display', 'block');
-                        element.find('.alert').html('Wrong server, please save again');
+                        element.find('.alert').html('Silahkan Coba Lagi');
                     }         
                 });
                 return false;
