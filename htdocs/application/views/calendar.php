@@ -196,7 +196,7 @@ $this->load->view('template/menu');
                 events: JSON.parse(get_data)
             });
         });
-
+/*
         $(document).on('click', '.add_calendar', function(){
             $('#create_modal input[name=calendar_id]').val(0);
             $('#create_modal').modal('show');  
@@ -432,7 +432,7 @@ $this->load->view('template/menu');
                 });
             })
         }
-
+*/
     </script>
 	<script src="<?php echo base_url('/assets/plugins/styleswitcher/jQuery.style.switcher.js')?>"></script>
     </body>
