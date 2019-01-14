@@ -159,7 +159,7 @@ $this->load->view('template/menu');
                     center: 'title',
                     right: 'month, agendaWeek, agendaDay'
                 },
-                defaultDate: moment().format('YYYY-MM-DD '),
+                defaultDate: moment().format('YYYY-MM-DD HH:mm:ss'),
                 
 				slotDuration: '00:30:00',  
 				minTime: '06:00:00',
@@ -170,8 +170,8 @@ $this->load->view('template/menu');
                 selectable: true,
                 selectHelper: true,
                 select: function(start, end) {
-                    $('#create_modal input[name=start_date]').val(moment(start).format('YYYY MM DD'));
-                    $('#create_modal input[name=end_date]').val(moment(end).format('YYYY MM DD'));
+                    $('#create_modal input[name=start_date]').val(moment(start).format('YYYY MM DD HH:mm:ss'));
+                    $('#create_modal input[name=end_date]').val(moment(end).format('YYYY MM DD HH:mm:ss'));
                     $('#create_modal').modal('show');
                     save();
                     $('#calendarIO').fullCalendar('unselect');
