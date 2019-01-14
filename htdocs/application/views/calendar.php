@@ -166,7 +166,8 @@ $this->load->view('template/menu');
 					minuteStep: 30
 					});
             $('#calendarIO').fullCalendar({
-                header: {
+                themeSystem: 'bootstrap4',
+				header: {
                     left: 'prev,next today',
                     center: 'title',
                     right: 'listMonth, agendaWeek, agendaDay'
