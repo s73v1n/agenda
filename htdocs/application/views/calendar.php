@@ -150,7 +150,7 @@ $this->load->view('template/menu');
 					autoclose: true,
 					todayBtn: true,
 					todayHighlight: true,
-					defaultDate: new Date(),					
+					startDate: new Date(),					
 					minuteStep: 30,
 					pickerPosition: "top-left"
 					});
