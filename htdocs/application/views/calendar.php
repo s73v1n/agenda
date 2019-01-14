@@ -87,18 +87,16 @@ $this->load->view('template/menu');
 													</div>
 													<div class="form-group">
                                                         <label class="control-label">Mulai</label>														
-															<div class="input-append date" id="form_datetime" data-date="2013-02-21T15:25:00Z">
+															<div class="input-append date form_datetime">
 																<input size="16" type="text" value="" readonly>
-																<span class="add-on"><i class="mdi-close"></i></span>
-																<span class="add-on"><i class="mdi-calendar-clock"></i></span>
+																<span class="add-on"><i class="icon-th"></i></span>
 															</div>
                                                     </div>
 													<div class="form-group">
                                                         <label class="control-label">Mulai</label>														
-															<div class="input-append date" id="form_datetime" data-date="2013-02-21T15:25:00Z">
+															<div class="input-append date form_datetime">
 																<input size="16" type="text" value="" readonly>
-																<span class="add-on"><i class="mdi-close"></i></span>
-																<span class="add-on"><i class="mdi-calendar-clock"></i></span>
+																<span class="add-on"><i class="icon-th"></i></span>
 															</div>
                                                     </div>                                         
                                             </div>
