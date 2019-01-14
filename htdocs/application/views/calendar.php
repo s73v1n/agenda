@@ -180,7 +180,7 @@ $this->load->view('template/menu');
                     $('#create_modal').modal('show');
                     save();
                     $('#calendarIO').fullCalendar('unselect');
-                },
+                },/*
                 eventDrop: function(event, delta, revertFunc) { // si changement de position
                     editDropResize(event);
                 },
@@ -192,7 +192,7 @@ $this->load->view('template/menu');
                     deteil(event);
                     editData(event);
                     deleteData(event);
-                },
+                },*/
                 events: JSON.parse(get_data)
             });
         });
