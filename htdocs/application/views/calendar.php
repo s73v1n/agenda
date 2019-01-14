@@ -100,21 +100,23 @@ $this->load->view('template/menu');
 
                                                     <div class="form-group">
                                                         <label class="control-label col-sm-2">Start Date</label>
-                                                        <div class="col-sm-10">
-																<div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-																	<input size="16" type="text" value="12-02-2012" readonly>
-																	<span class="add-on"><i class="icon-th"></i></span>
-																</div>
-                                                        </div>
+														<div class="col-sm-10">
+															<div class="input-append date form_datetime" data-date="2013-02-21T15:25:00Z">
+																<input size="16" type="text" value="" readonly>
+																<span class="add-on"><i class="icon-remove"></i></span>
+																<span class="add-on"><i class="icon-calendar"></i></span>
+															</div>
+														</div>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <label class="control-label col-sm-2">End Date</label>
                                                         <div class="col-sm-10">
-																<div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-																	<input size="16" type="text" value="12-02-2012" readonly>
-																	<span class="add-on"><i class="icon-th"></i></span>
-																</div>
+															<div class="input-append date form_datetime" data-date="2013-02-21T15:25:00Z">
+																<input size="16" type="text" value="" readonly>
+																<span class="add-on"><i class="icon-remove"></i></span>
+																<span class="add-on"><i class="icon-calendar"></i></span>
+															</div>
                                                         </div>
                                                     </div>
 
@@ -157,7 +159,12 @@ $this->load->view('template/menu');
         var backend_url     = '<?php echo base_url(); ?>';
 
         $(document).ready(function() {
-            $('.datetimepicker').datetimepicker();
+            $(".form_datetime").datetimepicker({
+					format: "dd mm yyyy hh:ii",
+					autoclose: true,
+					todayBtn: true,					
+					minuteStep: 10
+					});
             $('#calendarIO').fullCalendar({
                 header: {
                     left: 'prev,next today',
