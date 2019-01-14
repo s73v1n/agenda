@@ -14,7 +14,7 @@
 		<link href="<?php echo base_url('/assets/horizontal/css/colors/blue.css')?>" id="theme" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'; ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/calendar/dist/fullcalendar.css'; ?>">
-        <script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css'; ?>"></script>
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css'; ?>">
 <?php
 $this->load->view('template/header');
 ?>
