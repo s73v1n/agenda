@@ -149,7 +149,8 @@ $this->load->view('template/menu');
 					format: "yyyy-mm-dd hh:ii",
 					autoclose: true,
 					todayBtn: true,
-					todayHighlight: true,					
+					todayHighlight: true,
+					defaultDate: new Date(),					
 					minuteStep: 30,
 					pickerPosition: "top-left"
 					});
