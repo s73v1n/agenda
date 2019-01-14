@@ -170,7 +170,7 @@ $this->load->view('template/menu');
 				header: {
                     left: 'prev,next today',
                     center: 'title',
-                    right: 'listMonth, agendaWeek, agendaDay'
+                    right: 'month, agendaWeek, agendaDay'
                 },
                 defaultDate: moment().format('YYYY-MM-DD '),
                 
