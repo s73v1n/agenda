@@ -13,8 +13,8 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/horizontal/css/style.css'; ?>">
 		<link href="<?php echo base_url('/assets/horizontal/css/colors/blue.css')?>" id="theme" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'; ?>">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/fullcalendar/dist/fullcalendar.css'; ?>">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/calendar/dist/fullcalendar.css'; ?>">
+        <script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css'; ?>"></script>
 <?php
 $this->load->view('template/header');
 ?>
@@ -149,7 +149,7 @@ $this->load->view('template/menu');
     <script src="<?php echo base_url('/assets/plugins/sparkline/jquery.sparkline.min.js')?>"></script>	
 	<script src="<?php echo base_url('/assets/horizontal/js/sidebarmenu.js')?>"></script>
     <script src="<?php echo base_url('/assets/horizontal/js/custom.min.js')?>"></script>	
-	<script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js'; ?>"></script> 
+	<script type="text/javascript" src="<?php echo base_url().'assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js'; ?>"></script> 
     <script type="text/javascript" src="<?php echo base_url().'assets/plugins/calendar/dist/fullcalendar.js'; ?>"></script>
 	<script src="<?php echo base_url('/assets/plugins/calendar/dist/locale/id.js')?>"></script>	
     <script type="text/javascript">
