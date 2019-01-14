@@ -240,7 +240,7 @@ $this->load->view('template/menu');
                 {
                     element.find('button[type=submit]').html('Submit');
                     element.find('.alert').css('display', 'block');
-                    element.find('.alert').html('Wrong server, please save again');
+                    element.find('.alert').html('Silahkan Coba Lagi');
                 }         
             });
             return false;
