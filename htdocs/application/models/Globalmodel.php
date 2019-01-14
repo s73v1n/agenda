@@ -29,5 +29,13 @@ class Globalmodel extends CI_Model
 		$this->db->delete($table);
 		return $this->db->affected_rows();
 	}
+	
+	Public function updateEvent()
+	{
+
+	$sql = "UPDATE events SET title = ?, description = ?, color = ? WHERE id = ?";
+	$this->db->query($sql, array($_POST['title'],$_POST['description'], $_POST['color'], $_POST['id']));
+		return ($this->db->affected_rows()!=1)?false:true;
+	}
 
 }

@@ -54,7 +54,7 @@ class Calendar extends CI_Controller {
 		        else
 		        {
 		        	$response['status'] = FALSE;
-		    		$response['notif']	= 'Server wrong, please save again';
+		    		$response['notif']	= 'Silahkan Coba Lagi';
 		        }
 			}
 			else

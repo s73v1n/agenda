@@ -261,7 +261,7 @@ $this->load->view('template/menu');
             $.ajax({
                 url     : backend_url+'calendar/save',
                 type    : 'POST',
-                data    : 'calendar_id='+event.id+'&title='+event.title+'&start_date='+start+'&end_date='+end,
+                data    : 'calendar_id='+event.id+'&title='+event.title+'$description='+event.description+'&start_date='+start+'&end_date='+end,
                 dataType: 'JSON',
                 beforeSend: function()
                 {
