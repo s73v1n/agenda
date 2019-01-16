@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Material Pro Admin Template - The Most Complete & Trusted Bootstrap 4 Admin Template</title>
+    <title>Gagian Protokol - Pemerintah Kota Jambi</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url('/assets/plugins/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
     <!-- chartist CSS -->
@@ -18,9 +18,6 @@
     <link href="<?php echo base_url('/assets/plugins/chartist-js/dist/chartist-init.css')?>" rel="stylesheet">
     <link href="<?php echo base_url('/assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css')?>" rel="stylesheet">
     <link href="<?php echo base_url('/assets/plugins/css-chart/css-chart.css')?>" rel="stylesheet">
-    <!-- Vector CSS -->
-    <link href="<?php echo base_url('/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css')?>" rel="stylesheet" />
-    <!-- Calendar CSS -->
     <link href="<?php echo base_url('/assets/plugins/calendar/dist/fullcalendar.css')?>" rel="stylesheet" />
 	<!-- Custom CSS -->
     <link href="<?php echo base_url('/assets/horizontal/css/style.css')?>" rel="stylesheet">
@@ -140,10 +137,6 @@ $this->load->view('template/menu');
     <!--stickey kit -->
     <script src="<?php echo base_url('/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js')?>"></script>
     <script src="<?php echo base_url('/assets/plugins/sparkline/jquery.sparkline.min.js')?>"></script>
-    <!--stickey kit -->
-    <script src="<?php echo base_url('/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js')?>"></script>
-    <script src="<?php echo base_url('/assets/plugins/sparkline/jquery.sparkline.min.js')?>"></script>
-    <script src="<?php echo base_url('/assets/plugins/sparkline/jquery.sparkline.min.js')?>"></script>
     <!--Custom JavaScript -->
     <script src="<?php echo base_url('/assets/horizontal/js/custom.min.js')?>"></script>
     <!-- ============================================================== -->
@@ -152,11 +145,6 @@ $this->load->view('template/menu');
     <!-- chartist chart -->
     <script src="<?php echo base_url('/assets/plugins/chartist-js/dist/chartist.min.js')?>"></script>
     <script src="<?php echo base_url('/assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js')?>"></script>
-    <!-- Calendar JavaScript -->
-    <script src="<?php echo base_url('/assets/plugins/moment/moment.js')?>"></script>
-    <script src="<?php echo base_url('/assets/plugins/calendar/dist/fullcalendar.min.js')?>"</script>
-    <script src="<?php echo base_url('/assets/plugins/calendar/dist/jquery.fullcalendar.js')?>"</script>
-    <script src="<?php echo base_url('/assets/plugins/calendar/dist/cal-init.js')?>"</script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
